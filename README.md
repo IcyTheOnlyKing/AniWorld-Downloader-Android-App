@@ -38,6 +38,20 @@ aniworld -w
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## Android Remote App (Expo)
+
+The `/mobile` directory contains a React Native (Expo) Android app that controls AniWorld downloads on a Raspberry Pi. It provides Browse, Search, Queue, Library, and Settings screens, with a mock API layer that can be swapped to a real Pi backend once available.
+
+```bash
+cd mobile
+npm install
+npm run android
+```
+
+Configure the Pi's local IP or Tailscale IP in **Settings**. All download requests are sent to the Raspberry Pi; media files remain stored on the Pi.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## Still in Development
 
 This project is actively being improved. Current work in progress includes:
